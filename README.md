@@ -14,12 +14,9 @@ npx cypress run
 ```
 
 ## Result of The Test
-Notes: This UI Automation still having a problem such as you can't run using ```bash
-npx cypress open
-``` and also it wouldn't run the second file of the test that timeout can't be resolved it too
-1. Report if running 'product.spec.js' first then 'category.spec.js':
-![image](https://github.com/mumtihf/Tugas_Pekanan5_UI_Automation/assets/58902547/e8fff3ef-62f7-4d56-98b7-7f12067b22c5)
+1. Report if run 'product feature' first then 'category feature'
+   ![image](https://github.com/mumtihf/Tugas_Pekanan5_UI_Automation/assets/58902547/1fbbd4f4-20dd-4472-be57-ba1775f5727c)
+2. Report if run 'category feature' first then 'product feature:
+   ![image](https://github.com/mumtihf/Tugas_Pekanan5_UI_Automation/assets/58902547/9926df2e-512a-4283-b5fe-e2cb517ae79e)
 
-2. Report if running 'category.spec.js' first then 'product.spec.js'
-![image](https://github.com/mumtihf/Tugas_Pekanan5_UI_Automation/assets/58902547/54012906-25f5-4dec-93e9-f485212ec6c9)
-
+Notes: This UI Automation still having a problem such as you can't run using "npx cypress open" and also it wouldn't run the second file of the test that timeout can't be resolved it too.
