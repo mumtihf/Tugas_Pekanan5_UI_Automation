@@ -1,10 +1,7 @@
 describe('Produk Feature', () => {
     beforeEach(() => {
         cy.login("sanber_47@gmail.com","sanber123").then(() => {
-            cy.visit('/', { timeout: 10000 }).as('visitAlias')
-            cy.get('@visitAlias').then(() => {
-                console.log('Mengunjungi URL selesai')
-            })
+            cy.visit('/')
             cy.contains('produk').click()
         })
     })
@@ -41,6 +38,7 @@ describe('Produk Feature', () => {
             expect(resp).to.equal('successitem ditambahkan')
         })
     })
+    
     it('Ubah Harga Jual Produk', () => {
         cy.get('#root > div > div > div.css-1r35f0l > div.chakra-container.css-9rmdie > div.css-1t33j5j > table > tbody > tr > td:nth-child(10)')
             .scrollIntoView().click() //Scroll to menu button

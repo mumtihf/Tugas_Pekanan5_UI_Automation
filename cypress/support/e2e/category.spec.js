@@ -5,6 +5,7 @@ describe('Category Feature', () => {
             cy.contains('kategori').click()
         })
     })
+
     it('Hapus Kategori', () => {
         cy.get('[class="chakra-button chakra-menu__menu-button css-pu8osu"]')
             .click() //Klik menu button
@@ -17,6 +18,7 @@ describe('Category Feature', () => {
             expect(resp).to.equal('successitem dihapus')
         })
     })
+    
     it('Tambah Kategori', () => {
         cy.get('#root > div > div > div.css-1r35f0l > div.chakra-container.css-9rmdie > div.css-1t33j5j > a')
             .click() //Klik button tambah
