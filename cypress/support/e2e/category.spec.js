@@ -1,12 +1,10 @@
 describe('Category Feature', () => {
     beforeEach(() => {
-        cy.login("sanber_47@gmail.com","sanber123").then(() => {
-            cy.visit('/')
-            cy.contains('kategori').click()
-        })
+        cy.contains('kategori').click()
     })
 
     it('Hapus Kategori', () => {
+        cy.get('#root > div > div > div.css-tnxwfz > div > a:nth-child(6) > div > div > div').click()
         cy.get('[class="chakra-button chakra-menu__menu-button css-pu8osu"]')
             .click() //Klik menu button
 
@@ -17,6 +15,8 @@ describe('Category Feature', () => {
         cy.get('#chakra-toast-manager-top-right > li > div').invoke('text').then((resp) => {
             expect(resp).to.equal('successitem dihapus')
         })
+        cy.wait(10000)
+        cy.url().should('include','/categories')
     })
     
     it('Tambah Kategori', () => {
@@ -33,8 +33,7 @@ describe('Category Feature', () => {
         cy.get('#chakra-toast-manager-top-right > li > div').invoke('text').then((resp) => {
             expect(resp).to.equal('successitem ditambahkan')
         })
-
         cy.wait(10000)
-        cy.contains('dashboard').click()
+        cy.url().should('include','/categories')
     })
 })
