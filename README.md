@@ -14,4 +14,8 @@ npx cypress run
 ```
 
 ## Result of The Test
+![image](https://github.com/mumtihf/Tugas_Pekanan5_UI_Automation/assets/58902547/4f1885b1-51dd-438f-82a7-4bc59e394846)
+
+![image](https://github.com/mumtihf/Tugas_Pekanan5_UI_Automation/assets/58902547/d5e6358d-8f4b-4037-89b3-23147c2f8f2c)
+
 ![image](https://github.com/mumtihf/Tugas_Pekanan5_UI_Automation/assets/58902547/215db68f-8412-404c-8445-4f2941c35746)
